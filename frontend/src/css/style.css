@@ -1,29 +1,134 @@
-/* ==========================
-   GOOGLE FONT
-========================== */
+/* ============================= */
+/* GOOGLE FONT */
+/* ============================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;600;700&display=swap');
 
-/* ==========================
-   RESET
-========================== */
+/* ============================= */
+/* ROOT VARIABLES */
+/* ============================= */
+
+:root { 
+  --nav-logo-clr:#009900; 
+  --nav-link-clr:#333;
+  --dark-purple-clr: #c946b8;
+  --purple-clr: #e016ee;
+  --nav-link-clr:#5a485c;
+}
+/* ============================= */
+/* GLOBAL RESET */
+/* ============================= */
 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    text-decoration:none;
-    list-style:none;
-    scroll-behavior:smooth;
-    font-family:'Poppins',sans-serif;
+    font-family:"Plus Jakarta Sans", sans-serif;
 }
 
-:root{
-    --bg-color:#0f172a;
-    --second-bg:#1e293b;
-    --card-bg:rgba(255,255,255,.06);
 
-    --text:#ffffff;
-    --text-light:#cbd5e1;
+/* ============================= */
+/* NAVBAR */
+/* ============================= */
 
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 1000;  
+    padding:20px 80px;
+    border-bottom:3px solid var(--dark-purple-clr);
+    width: 100%;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:700;
+    color: var(--purple-clr);
+}
+
+.logo i{
+    margin-right:6px;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:40px;
+}
+.nav-links {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.nav-links a{
+    display: block;
+    text-decoration:none;
+    color: var(--nav-link-clr);
+    font-weight:500;
+}
+.nav-links a:hover{
+    color: var(--nav-active-clr);
+}
+.nav-links a.active{
+    color: var(--nav-active-clr);
+}
+.nav-icons{
+    display:flex;
+    gap:20px;
+    font-size:18px;
+}
+.nav-icons i:hover{
+    color: var(--nav-active-clr);
+}
+.menu-icon{
+    display:none;
+}
+@media (max-width:600px){
+    /* NAVBAR */
+    .navbar{
+        padding:15px;
+        flex-wrap:wrap;
+    }
+
+    .logo{
+        font-size:18px;
+    }
+
+    .nav-links{
+        width:100%;
+        display:none;
+        flex-direction:column;
+        gap:15px;
+        margin-top:20px;
+        text-align:center;
+    }
+
+    .nav-links.responsive{
+        display:flex;
+    }
+
+    .nav-links a{
+        font-size:14px;
+    }
+
+    .menu-icon{
+        display:block;
+        font-size:22px;
+        cursor:pointer;
+    }
+
+    .nav-icons{
+        gap:10px;
+        font-size:16px;
+    }
+    .menu-icon{
+        display:block;
+        font-size:22px;
+        cursor:pointer;
+    }
 }
