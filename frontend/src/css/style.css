@@ -88,6 +88,90 @@
 .menu-icon{
     display:none;
 }
+/* ============================= */
+/* HERO SECTION */
+/* ============================= */
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-bg.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: white;
+}
+.shop-btn{
+    margin-top: 25px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--purple-clr);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+.footer{
+    display:flex;
+    justify-content:space-between;
+    padding:60px 100px;
+    margin-top:-5px;
+    background:black;
+    gap:80px;
+}
+
+.footer h2{
+    color:white;
+    font-size:16px;
+    margin-bottom: 15px;
+}
+
+.footer p{
+    color:gray;
+    font-size: 14px;
+}
+
+ul{
+    list-style:none;
+}
+
+li a{
+    color:gray;
+    text-decoration:none;
+    line-height:1.8;
+    font-size: 14px;
+}
+li a:hover{
+	color: white;
+}
+.social-icons{
+    display:flex;
+    gap:15px;
+    margin-top:10px;
+}
+
+.social-icons a{
+    color:gray;
+    font-size:20px;
+}
+.social-icons a:hover{
+	color: white;
+}
+.footer-bottom{
+    background:black;
+    color:gray;
+    text-align:center;
+    padding:40px;
+    border-top:1px solid var(--black-clr);
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
 @media (max-width:600px){
     /* NAVBAR */
     .navbar{
@@ -131,4 +215,25 @@
         font-size:22px;
         cursor:pointer;
     }
+    .hero-content{
+        padding: 0 20px;
+        font-size: 13px;
+    }
+    /* FOOTER */
+    .footer{
+        flex-direction:column;
+        padding:40px 20px;
+        gap:30px;
+    }
+    .footer h1 {
+        font-size: 16px;
+    }
+
+    .footer h2 {
+        font-size: 15px;
+    }
+    .footer-bottom{
+        font-size: 15px;
+    }
+
 }
