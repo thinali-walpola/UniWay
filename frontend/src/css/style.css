@@ -595,38 +595,34 @@ div.gallery img {
     flex: 0 0 auto;
 }
 .img6{
-    background:
-    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-    url("../../asset/images/6.jpg") center/cover no-repeat;
+    background: url("../../asset/images/6.jpg") center/cover no-repeat;
 }
 .img7{
     background:
-    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
     url("../../asset/images/7.jpg") center/cover no-repeat;
 }
 .img8{
-    background:
-    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-    url("../../asset/images/8.jpg") center/cover no-repeat;
+    background:url("../../asset/images/8.jpg") center/cover no-repeat;
 }
 .img9{
-    background:
-    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-    url("../../asset/images/9.jpg") center/cover no-repeat;
+    background:url("../../asset/images/9.jpg") center/cover no-repeat;
 }
 .img10{
-    background:
-    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-    url("../../asset/images/10.jpg") center/cover no-repeat;
+    background:url("../../asset/images/10.jpg") center/cover no-repeat;
+}
+
+.hero-container {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: white;
     text-align: center;
+    padding: 20px;
 }
 .hero-text h1 {
     font-size: 36px;
