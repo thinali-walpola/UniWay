@@ -583,7 +583,7 @@ div.gallery img {
 
 .image-gallery {
     display: flex;
-    gap: 0px;
+    gap: -10px;
     padding: 0px;
     overflow-x: auto;
 }
