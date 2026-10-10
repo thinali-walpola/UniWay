@@ -575,31 +575,67 @@ div.gallery img {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin:-45px  0 0 0;
     min-height: 80vh;
-    padding: 120px 20px 40px;
+    padding: 0px;
+}
 
+
+.image-gallery {
+    display: flex;
+    gap: 0px;
+    padding: 0px;
+    overflow-x: auto;
+}
+
+.image-gallery img {
+    width: 307px;
+    height: 400px;
+    object-fit: cover;
+    flex: 0 0 auto;
+}
+.img6{
     background:
-        linear-gradient(
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)
-        ),
-        url("../../asset/images/hero.png")
-        no-repeat center center / cover;
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    url("../../asset/images/6.jpg") center/cover no-repeat;
+}
+.img7{
+    background:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    url("../../asset/images/7.jpg") center/cover no-repeat;
+}
+.img8{
+    background:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    url("../../asset/images/8.jpg") center/cover no-repeat;
+}
+.img9{
+    background:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    url("../../asset/images/9.jpg") center/cover no-repeat;
+}
+.img10{
+    background:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    url("../../asset/images/10.jpg") center/cover no-repeat;
+}
 
-    text-align: center;
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
+    text-align: center;
 }
-
-.hero-container h1 {
-    font-size: clamp(28px, 4vw, 46px);
-    margin-bottom: 15px;
+.hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
 }
-
-.hero-container p {
-    font-size: 16px;
-    line-height: 1.8;
+.hero-text p {
+    font-size: 18px;
+    line-height: 1.5;
 }
-
 /* =============================
    FOOTER
 ============================= */
