@@ -493,9 +493,15 @@ ul {
     font-size: 14px;
     color: var(--text-clr);
 }
-.event-container p {
-    margin: auto 70px 45px auto;
+.view-more {
+    display: block;
+    margin: 0px 70px 25px auto;
     text-align: right;
+    font-size: 14px;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 /* GALLERY */
@@ -559,6 +565,38 @@ div.gallery img {
     content: "";
     display: table;
     clear: both;
+}
+
+/* =============================
+   EVENT & NEWS
+============================= */
+.event-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 120px 20px 40px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url("../../asset/images/hero.png")
+        no-repeat center center / cover;
+
+    text-align: center;
+    color: white;
+}
+
+.hero-container h1 {
+    font-size: clamp(28px, 4vw, 46px);
+    margin-bottom: 15px;
+}
+
+.hero-container p {
+    font-size: 16px;
+    line-height: 1.8;
 }
 
 /* =============================
