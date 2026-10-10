@@ -495,13 +495,14 @@ ul {
 }
 .view-more {
     display: block;
-    margin: 0px 70px 25px auto;
+    margin: 0px 10px 25px auto;
     text-align: right;
     font-size: 14px;
     border: none;
     padding: 8px 15px;
     border-radius: 5px;
     cursor: pointer;
+    background: var(--white-clr);
 }
 
 /* GALLERY */
