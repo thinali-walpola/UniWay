@@ -1,189 +1,335 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>UniWay.lk</title>
+
     <link rel="stylesheet" href="frontend/src/css/style.css">
-	<link rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
-	<div class="navbar">
 
-    	<div class="logo">
-        	<i class="fa-solid fa-leaf"></i> UniWay
-    	</div>
+    <!-- NAVBAR -->
+    <nav class="navbar">
 
-    	<ul class="nav-links" id="myTopnav">
-        	<li><a href="index.html" class="active">Home</a></li>
-        	<li><a href="">Study </a></li>
-            <li><a href="">Academic</a></li>
-            <li><a href="">International</a></li>
-        	<li><a href="">About</a></li>
-    	</ul>
+        <div class="logo">
+            <i class="fa-solid fa-leaf"></i> UniWay
+        </div>
 
-    	<div class="nav-icons">
-        	<i class="fa-solid fa-search"></i>
+        <ul class="nav-links" id="myTopnav">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#">Study</a></li>
+            <li><a href="#">Academic</a></li>
+            <li><a href="#">International</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
 
-    	</div>
+        <div class="nav-icons">
+            <i class="fa-solid fa-search"></i>
+        </div>
 
-    	<div class="menu-icon" onclick="myFunction()">
-        	<i class="fa-solid fa-bars"></i>
-    	</div>
-	</div>
+        <button class="menu-icon"
+                type="button"
+                onclick="toggleMenu()"
+                aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
 
+    </nav>
+
+
+    <!-- HERO SECTION -->
     <section class="hero">
         <div class="hero-content">
             <h1>Welcome to UniWay.lk</h1>
-            <p>Your trusted source for fresh, organic, and locally-sourced food products.</p>
-            <a href="#" class="explor-btn">Explore </a>
+
+            <p>
+                Your trusted guide to university education
+                and academic opportunities.
+            </p>
+
+            <a href="#features" class="explor-btn">Explore</a>
         </div>
     </section>
-	
-	<section class="features">
-		<div class="row">
-  			<div class="column" >
-				<div class="column-desc">
-    				<h1>Shape Your Future,<br> Choose the Right <br>Programme</h1>
-    			
-					<div class ="feature" >
-						<span>Just after A/Levels</span>
-						<div class ="line-content">
-							<h3>Undergraduate Degrees</h3>
-							<i class="fa-solid fa-arrow-right-long"></i>
-						</div>
-
-						<span>After your first degree</span>
-						<div class ="line-content">
-							<h3>Postgraduate Degrees</h3>
-							<i class="fa-solid fa-arrow-right-long"></i>
-						</div>
-
-						<span>Career Development</span>
-						<div class ="line-content">
-							<h3>Professional Courses</h3>
-							<i class="fa-solid fa-arrow-right-long"></i>
-						</div>
-					</div>
-
-				</div>
-  			</div>
-
-  			<div class="column">
-				<div class="right-desc">
-					<h1>Explore Your Options</h1>
-    			<p>Discover 100+ academic and professional programs crafted to fuel your ambitions and support your journey toward lasting success.</p>
-				
-				<!-- SEARCH -->
-				<div class="search-container">
-    				<form action="/action_page.php">
-      					<input type="text" placeholder="Search.." name="search">
-      					<button type="submit"><i class="fa fa-search"></i></button>
-    				</form>
-  				</div>
-
-				<div class="marquee">
-        			<div class="marquee-track">
-
-            			<div class="marquee-group">
-                			<div class="item">💻 Web Development</div>
-                			<div class="item">🎨 UI/UX Design</div>
-                			<div class="item">⚡ Fast Performance</div>
-                			<div class="item">✨ Creative Ideas</div>
-            			</div>
-
-            
-            			<div class="marquee-group" aria-hidden="true">
-                			<div class="item">💻 Web Development</div>
-                			<div class="item">🎨 UI/UX Design</div>
-                			<div class="item">⚡ Fast Performance</div>
-                			<div class="item">✨ Creative Ideas</div>
-						</div>
-            		</div>
-
-        		</div>
-    		
-			</div>
-		</div>
-	</section>
-
-	
-	
-	
-	<!-- FOOTER -->
-
-	<div class="footer">
-
-		<div>
-
-			<h2>UniWay</h2>
-
-			<p>
-				Your trusted source for fresh, organic,
-				and locally-sourced food products.
-			</p>
-
-		</div>
 
 
-		<div>
+    <!-- FEATURES SECTION -->
+    <section class="features" id="features">
 
-			<h2>Quick Links</h2>
+        <div class="row">
 
-			<ul>
-				<li><a href="#">Shop All Products</a></li>
-				<li><a href="#">About Us</a></li>
-				<li><a href="#">My Account</a></li>
-			</ul>
+            <!-- LEFT COLUMN -->
+            <div class="column">
 
-		</div>
+                <div class="column-desc">
 
+                    <h1>
+                        Shape Your Future,<br>
+                        Choose the Right<br>
+                        Programme
+                    </h1>
 
-		<div>
+                    <div class="feature">
 
-			<h2>Customer Service</h2>
+                        <span>Just after A/Levels</span>
 
-			<ul>
-				<li><a href="#">Contact Us</a></li>
-				<li><a href="#">Shipping Information</a></li>
-				<li><a href="#">Returns & Refunds</a></li>
-				<li><a href="#">FAQ</a></li>
-			</ul>
+                        <div class="line-content">
+                            <h3>Undergraduate Degrees</h3>
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
 
-		</div>
+                        <span>After your first degree</span>
 
+                        <div class="line-content">
+                            <h3>Postgraduate Degrees</h3>
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
 
-		<div>
+                        <span>Career Development</span>
 
-			<h2>Stay Connected</h2>
-			<p>
-Subscribe to our newsletter for exclusive <br>offers and updates.</p>
-			<div class="social-icons">
+                        <div class="line-content">
+                            <h3>Professional Courses</h3>
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
 
-				<a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
 
-				<a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
 
-				<a href="#"><i class="fab fa-twitter"></i></a>
-
-				<a href="#"><i class="fab fa-linkedin-in"></i></a>
-
-			</div>
-
-		</div>
-
-	</div>
+            </div>
 
 
-	<div class="footer-bottom">
+            <!-- RIGHT COLUMN -->
+            <div class="column">
 
-		Copyright © 2026 Disansa Web.
-		All Rights Reserved.
+                <div class="right-desc">
 
-	</div>
+                    <h1>Explore Your Options</h1>
+
+                    <p>
+                        Discover academic and professional programmes
+                        crafted to fuel your ambitions and support
+                        your journey toward lasting success.
+                    </p>
+
+                </div>
+
+
+                <!-- SEARCH BAR AND DROPDOWN -->
+                <div class="search-tools">
+
+                    <div class="search-container">
+
+                        <input
+                            type="text"
+                            id="searchInput"
+                            placeholder="Search programmes..."
+                            aria-label="Search programmes">
+
+                        <button type="button"
+                                id="searchButton"
+                                aria-label="Search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="dropdown">
+
+                        <button
+                            class="dropbtn"
+                            id="dropdownButton"
+                            type="button"
+                            aria-expanded="false"
+                            aria-controls="myDropdown">
+
+                            Categories
+                            <i class="fa-solid fa-chevron-down"></i>
+
+                        </button>
+
+                        <div class="dropdown-content" id="myDropdown">
+
+                            <a href="#" data-category="Undergraduate">
+                                Undergraduate
+                            </a>
+
+                            <a href="#" data-category="Postgraduate">
+                                Postgraduate
+                            </a>
+
+                            <a href="#" data-category="Professional">
+                                Professional Courses
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SCROLLING ANIMATION -->
+                <div class="marquee">
+
+                    <div class="marquee-track">
+
+                        <div class="marquee-group">
+
+                            <div class="item">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                Undergraduate Degrees
+                            </div>
+
+                            <div class="item">
+                                <i class="fa-solid fa-book-open"></i>
+                                Academic Programmes
+                            </div>
+
+                            <div class="item">
+                                <i class="fa-solid fa-globe"></i>
+                                International Education
+                            </div>
+
+                            <div class="item">
+                                <i class="fa-solid fa-laptop"></i>
+                                Professional Courses
+                            </div>
+
+                        </div>
+
+
+                        <!-- DUPLICATE FOR SEAMLESS ANIMATION -->
+                        <div class="marquee-group" aria-hidden="true">
+
+                            <div class="item">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                Undergraduate Degrees
+                            </div>
+
+                            <div class="item">
+                                <i class="fa-solid fa-book-open"></i>
+                                Academic Programmes
+                            </div>
+
+                            <div class="item">
+                                <i class="fa-solid fa-globe"></i>
+                                International Education
+                            </div>
+
+                            <div class="item">
+                                <i class="fa-solid fa-laptop"></i>
+                                Professional Courses
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer">
+
+            <div class="footer-about">
+
+                <h2>UniWay</h2>
+
+                <p>
+                    Your guide to university education,
+                    academic opportunities, and future careers.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h2>Quick Links</h2>
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Study Programmes</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+
+            </div>
+
+
+            <div>
+
+                <h2>Student Resources</h2>
+
+                <ul>
+                    <li><a href="#">Undergraduate Degrees</a></li>
+                    <li><a href="#">Postgraduate Degrees</a></li>
+                    <li><a href="#">Professional Courses</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+
+            </div>
+
+
+            <div>
+
+                <h2>Stay Connected</h2>
+
+                <p>
+                    Follow us for education news and updates.
+                </p>
+
+                <div class="social-icons">
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            Copyright &copy; 2026 UniWay.lk.
+            All Rights Reserved.
+
+        </div>
+
+    </footer>
+
 
     <script src="frontend/src/js/script.js"></script>
+
 </body>
 </html>
