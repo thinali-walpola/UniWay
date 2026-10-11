@@ -354,17 +354,7 @@ ul {
     font-size: 14px;
     color: var(--text-clr);
 }
-.view-more {
-    display: block;
-    margin: 0px 10px 25px auto;
-    text-align: right;
-    font-size: 14px;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    background: var(--white-clr);
-}
+
 
 /* GALLERY */
 
@@ -392,27 +382,11 @@ div.gallery img {
 }
 
 
-.overlay {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    background-color: var(--black-light-clr);
-}
 
-.gallery:hover .overlay {
+.gallery:hover  {
     opacity: 1;
 }
 
-.overlay .text {
-    color: var(--white-clr);
-    font-size: 20px;
-    text-align: center;
-}
 
 /* RESPONSIVE GALLERY ITEM */
 
