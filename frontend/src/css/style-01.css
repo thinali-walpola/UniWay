@@ -364,17 +364,22 @@ div.gallery {
     overflow: hidden;
 }
 
-div.gallery:hover {
-    border-color: var(--text-clr);
-}
-
 div.gallery img {
     display: block;
     width: 100%;
     height: auto;
 }
 
+div.gallery img :hover {
+    border-color: var(--text-clr);
+}
 
+.overlay{
+    padding: 20px;
+}
+.text{
+    text-align: center;
+}
 .image {
     display: block;
     width: 100%;
