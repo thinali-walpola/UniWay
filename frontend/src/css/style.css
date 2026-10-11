@@ -677,7 +677,7 @@ div.gallery img {
     cursor: pointer;
 }
 
-.search-container button:hover {
+.search-content button:hover {
     background: var(--dark-purple-clr);
 }
 
