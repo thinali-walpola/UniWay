@@ -88,9 +88,9 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // SEARCH
-const searchButton = document.getElementById("searchButton");
+const searchBtn = document.getElementById("searchBtn");
 
-searchButton.addEventListener("click", function () {
+searchBtn.addEventListener("click", function () {
     const event = document.getElementById("searchEvent").value.trim();
     const location = document.getElementById("searchLocation").value.trim();
     const type = document.getElementById("searchType").value.trim();
