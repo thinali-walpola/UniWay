@@ -65,7 +65,7 @@ ul {
     left: 0;
     width: 100%;
     padding: 20px 80px;
-    background: white;
+    background: var(--white-clr);
     border-bottom: 3px solid var(--dark-purple-clr);
     z-index: 1000;
 }
@@ -184,7 +184,7 @@ ul {
 }
 
 .hero-text {
-    color: white;
+    color: var(--white-clr);
     text-align: center;
     padding: 20px;
 }
@@ -224,7 +224,7 @@ ul {
     border: 1px solid #ddd;
     border-radius: 5px;
     outline: none;
-    background: white;
+    background: var(--white-clr);
 }
 
 .search-content input[type="text"]:focus {
@@ -235,7 +235,7 @@ ul {
     flex-shrink: 0;
     padding: 12px 18px;
     background: var(--purple-clr);
-    color: white;
+    color:  var(--white-clr);
     border: none;
     border-radius: 5px;
     cursor: pointer;
