@@ -420,14 +420,15 @@ ul {
     transform: scale(1.06);
 }
 
-/* Tablet */
+
+/* =============================
+   TABLET RESPONSIVE
+============================= */
 @media (max-width: 1000px) {
     .event-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
-
-
 
 
 /* =============================
