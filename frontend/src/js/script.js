@@ -86,3 +86,23 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 });
+
+// SEARCH
+const searchButton = document.getElementById("searchButton");
+
+searchButton.addEventListener("click", function () {
+    const event = document.getElementById("searchEvent").value.trim();
+    const location = document.getElementById("searchLocation").value.trim();
+    const type = document.getElementById("searchType").value.trim();
+
+    console.log("Event:", event);
+    console.log("Location:", location);
+    console.log("Event type:", type);
+
+    alert(
+        "Search details:\n" +
+        "Event: " + (event || "Any") + "\n" +
+        "Location: " + (location || "Any") + "\n" +
+        "Event type: " + (type || "Any")
+    );
+});
