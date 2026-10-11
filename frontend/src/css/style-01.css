@@ -326,6 +326,110 @@ ul {
   border-radius: 5px;
   cursor: pointer;
 }
+
+/* =============================
+   EVENT & NEWS
+============================= */
+
+.event-section {
+    min-height: 70vh;
+    padding: 20px 0;
+}
+
+.event-container {
+    margin: 50px 70px 50px 70px;
+    
+}
+
+.event-container h2 {
+    margin: 50px 10px 20px;
+    text-align: center;
+    font-size: 26px;
+    color: var(--purple-clr);
+}
+.event-container span {
+    display: block;
+    margin: 0px auto 25px auto;
+    text-align: center;
+    font-size: 14px;
+    color: var(--text-clr);
+}
+.view-more {
+    display: block;
+    margin: 0px 10px 25px auto;
+    text-align: right;
+    font-size: 14px;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: var(--white-clr);
+}
+
+/* GALLERY */
+
+div.gallery {
+    position: relative;
+    border: 1px solid var(--border-clr);
+    overflow: hidden;
+}
+
+div.gallery:hover {
+    border-color: var(--text-clr);
+}
+
+div.gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+.image {
+    display: block;
+    width: 100%;
+    height: 300px;
+}
+
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    background-color: var(--black-light-clr);
+}
+
+.gallery:hover .overlay {
+    opacity: 1;
+}
+
+.overlay .text {
+    color: var(--white-clr);
+    font-size: 20px;
+    text-align: center;
+}
+
+/* RESPONSIVE GALLERY ITEM */
+
+.event-responsive {
+    padding: 0 6px;
+    float: left;
+    width: 25%;
+}
+
+
+.event-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
 /* =============================
    MOBILE RESPONSIVE
 ============================= */
