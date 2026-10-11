@@ -636,8 +636,49 @@ div.gallery img {
 /* =============================
    SEARCH SECTION
 ============================= */
-.search-section {
+.search-section{
+    margin: 25px 45px 25px 45px;
+}
+.search-content {
+    display: flex;
+    align-items: stretch;
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+    float: none;
+}
 
+.search-content input[type="text"] {
+    flex: 1;
+    min-width: 0;
+    width: 100%;
+    padding: 11px 5px;
+    margin: 0 10px 0 0;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-content input[type="text"]:focus {
+    border-color: var(--purple-clr);
+}
+
+.search-content button {
+    flex-shrink: 0;
+    padding: 11px 15px;
+    margin: 0;
+    float: none;
+    background: var(--purple-clr);
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background: var(--dark-purple-clr);
 }
 
 /* =============================
