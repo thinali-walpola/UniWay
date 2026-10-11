@@ -171,7 +171,7 @@ ul {
     content: url("../../asset/images/10.jpg");
 }
 
-/* Text over the gallery */
+/* HERO TEXT */
 .hero-container {
     position: absolute;
     inset: 0;
@@ -202,8 +202,8 @@ ul {
 /* =============================
    SEARCH SECTION
 ============================= */
-
 .search-section {
+    margin-top: 50px;
     position: relative;
     z-index: 2;
     margin: 25px 45px;
