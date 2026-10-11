@@ -29,6 +29,7 @@
     --gray-clr: #f5eded;
     --gray-light-clr:  #555;
     --dark-gray-clr: #333;
+    --lightgray: #eeeeee;
     
     --border-clr: #1c1919ba;
     --text-clr: #b6becf;
@@ -327,14 +328,14 @@ ul {
   cursor: pointer;
 }
 
-```css
+
 /* =============================
    EVENTS & NEWS GALLERY
 ============================= */
 
 .event-section {
     padding: 60px 5%;
-    background: #fff;
+    background: var(--white-clr);
 }
 
 .event-container {
@@ -357,57 +358,85 @@ ul {
     color: var(--gray-light-clr);
 }
 
-/* Responsive card grid */
+/* =============================
+   EVENTS IMAGE GRID
+============================= */
+
+
 .event-grid {
     display: grid;
+
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 20px;
+
+    width: 100%;
+    align-items: stretch;
+    margin-bottom: 25px;
 }
 
-/* Individual card */
 .gallery {
     position: relative;
+
+    width: 100%;
     height: 260px;
+
     overflow: hidden;
-    border-radius: 10px;
-    background: #eee;
+    border: 1px solid var(--lightgray);
+    
+
+    background: var(--lightgray);
     cursor: pointer;
 }
 
-/* Image */
 .gallery .image {
     display: block;
+
     width: 100%;
     height: 100%;
+
     object-fit: cover;
+
     transition: transform 0.4s ease;
 }
 
-/* Dark overlay */
+
+/* Image hover zoom */
+
+.gallery:hover .image {
+    transform: scale(1.06);
+}
+
 .gallery .overlay {
     position: absolute;
     inset: 0;
+
     display: flex;
     align-items: flex-end;
+
     padding: 20px;
+
     background: linear-gradient(
-        transparent 25%,
-        rgba(0, 0, 0, 0.8)
+        to top,
+        rgba(0, 0, 0, 0.85),
+        rgba(0, 0, 0, 0.15) 70%,
+        transparent
     );
+
     opacity: 0;
     transition: opacity 0.3s ease;
 }
 
-/* Overlay text */
 .gallery .text {
-    color: white;
-    font-size: 15px;
-    line-height: 1.6;
+    color: var(--white-clr);
+
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 500;
+
     transform: translateY(10px);
     transition: transform 0.3s ease;
 }
 
-/* Hover effects */
 .gallery:hover .overlay {
     opacity: 1;
 }
@@ -416,13 +445,8 @@ ul {
     transform: translateY(0);
 }
 
-.gallery:hover .image {
-    transform: scale(1.06);
-}
-
-
 /* =============================
-   TABLET RESPONSIVE
+   TABL RESPONSIVE
 ============================= */
 @media (max-width: 1000px) {
     .event-grid {
