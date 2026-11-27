@@ -498,8 +498,65 @@
         order: 1;
     }
 }
+/* =============================
+   SEARCH SECTION
+============================= */
+.search-section {
+    margin-top: 50px;
+    position: relative;
+    z-index: 2;
+    margin: 25px 45px;
+}
+
+.search-content {
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+    width: 100%;
+}
+
+.search-content input[type="text"] {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    background: var(--white-clr);
+}
+
+.search-content input[type="text"]:focus {
+    border-color: var(--purple-clr);
+}
+
+.search-content button {
+    flex-shrink: 0;
+    padding: 12px 18px;
+    background: var(--purple-clr);
+    color:  var(--white-clr);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 </style>
 <body>
+    <!-- SEARCH SECTION -->
+    <section class="search-section">
+      <div class="search-content">
+        <input type="text" id="searchBtn" placeholder="Search events..." />
+
+        <input type="text" id="searchBtn" placeholder="Search location..." />
+
+        <input type="text" id="searchBtn" placeholder="Search event type..." />
+
+        <button type="button" id="searchBtn">
+          <i class="fa-solid fa-search"></i>
+        </button>
+      </div>
+    </section>
+
 <section class="uniway-explore" id="explore">
 
     <div class="explore-heading">

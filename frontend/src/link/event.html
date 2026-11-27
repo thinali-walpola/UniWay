@@ -4,16 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniWay | Events</title>
 
-    <title>UniWay.lk</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="stylesheet" href="../../src/css/style-01.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../src/css/style-02.css">
 </head>
 
 <body>
+
 
     <!-- NAVBAR -->
     <nav class="navbar">
@@ -26,8 +28,8 @@
             <li><a href="../../../index.html">Home</a></li>
             <li><a href="#">International</a></li>
             <li><a href="local.html">Local</a></li>
-            <li><a href="frontend/src/link/event.html" class="active">Events & News</a></li>
-            <li><a href="#">About us</a></li>
+            <li><a href="event.html" class="active">Events & News</a></li>
+            <li><a href="about.html">About us</a></li>
         </ul>
 
         <div class="nav-icons">
@@ -42,125 +44,436 @@
         </button>
 
     </nav>
+    <main class="page">
 
-    <section class="news-hero">
-        <div class="news-container">
+        <!-- FEATURED EVENT -->
+        <section class="featured-event">
 
-        </div>
-    </section>
+            <div class="featured-image-wrap">
 
-    <!-- NEWS DESC --> 
-    <section class="news-sec"> 
-        
-        <div class="news-header" style="line-height: 1.8;"> 
-            <p style="font-size:12px; font-weight: 900;">Shop</p> 
-            <h2 style="font-size:49px; font-weight:300;">Featured selections</h2> 
-            <p style="font-size:12px;">Paste into Webflow or the Relume Figma Plugin to add Wireframes</p> 
-        </div> 
-        
-        <div class="news-container"> 
-            
-            <div class="news-image"> 
-                <img src="../../asset/images/hero.png"  class="new-img"> 
-            </div> 
+                <img
+                    class="featured-image"
+                    src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1200&q=85"
+                    alt="Students enjoying a welcome event"
+                >
 
-            <div class="news-content"> 
-                <p style="font-size:12px;">Popular</p> 
-                <h1 style="font-weight: 400;">What customers are ordering now</h1> 
-                <p style="font-weight: 400;">These items move fast because they're good. Real food, real flavor, real value.</p> 
-                <button class="shop-btn">Browse</button> 
-                <button class="learn-btn">View ></button> 
-            </div> 
-        </div> 
-    </section>
+                <span class="welcome-label">Welcome Event</span>
 
-    <section class="event-section">
-        <div class="event-container">
+                <span class="registration-label">
+                    Registration Open
+                </span>
 
-            <h2>Events & News</h2>
-            <span>Stay updated with the latest happenings in the academic world</span>
-            
-            <div class="event-grid">
+            </div>
 
-                <div class="gallery">
-                    <img src="../../asset/images/1.jpg"
-                    class="image" alt="University news">
-        
-                    <div class="overlay">
-                        <div class="text">University News</div>
-                    </div>
+            <div class="featured-content">
+
+                <h1>Freshers' Welcome 2025</h1>
+
+                <div class="event-meta">
+                    <span>▦ January 8, 2025</span>
+                    <span>⌖ Auditorium</span>
+                    <span>♧ 3,000+ Expected</span>
                 </div>
 
-                <div class="gallery">
-                    <img src="../../asset/images/5.jpg"
-                    class="image" alt="Institutional news">
-        
-                    <div class="overlay">
-                        <div class="text">Institutional News</div>
-                    </div>
+                <p class="event-description">
+                    Grand welcome ceremony for the new batch of students
+                    with performances, games, and interactive sessions
+                    to help freshers connect with seniors.
+                </p>
+
+                <h2 class="highlights-title">HIGHLIGHTS</h2>
+
+                <div class="highlight-list">
+                    <span>Welcome Ceremony</span>
+                    <span>Talent Show</span>
+                    <span>DJ Night</span>
+                    <span>Gaming Zone</span>
                 </div>
 
-                <div class="gallery">
-                    <img src="../../asset/images/3..jpg"
-                        class="image" alt="Conference">
-                
-                    <div class="overlay">
-                        <div class="text">Conference</div>
-                    </div>
-                </div>
+                <div class="featured-actions">
 
-                <div class="gallery">
-                    <img src="../../asset/images/4..jpg" class="image" alt="Competition">
-                    
-                    <div class="overlay">
-                        <div class="text">Competition</div>
-                    </div>
+                    <button class="button button-primary" id="registerButton">
+                        Register Now <span>→</span>
+                    </button>
+
+                    <button class="button button-outline" id="detailsButton">
+                        View Details
+                    </button>
+
                 </div>
 
             </div>
 
-            <div class="event-grid">
+            <div class="featured-image-wrap">
 
-                <div class="gallery">
-                    <img src="../../asset/images/1.jpg"
-                    class="image" alt="University news">
-        
-                    <div class="overlay">
-                        <div class="text">University News</div>
-                    </div>
+                <img
+                    class="featured-image"
+                    src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1200&q=85"
+                    alt="Students enjoying a welcome event"
+                >
+
+                <span class="welcome-label">Welcome Event</span>
+
+                <span class="registration-label">
+                    Registration Open
+                </span>
+
+            </div>
+
+            <div class="featured-content">
+
+                <h1>Freshers' Welcome 2025</h1>
+
+                <div class="event-meta">
+                    <span>▦ January 8, 2025</span>
+                    <span>⌖ Auditorium</span>
+                    <span>♧ 3,000+ Expected</span>
                 </div>
 
-                <div class="gallery">
-                    <img src="../../asset/images/5.jpg"
-                    class="image" alt="Institutional news">
-        
-                    <div class="overlay">
-                        <div class="text">Institutional News</div>
-                    </div>
+                <p class="event-description">
+                    Grand welcome ceremony for the new batch of students
+                    with performances, games, and interactive sessions
+                    to help freshers connect with seniors.
+                </p>
+
+                <h2 class="highlights-title">HIGHLIGHTS</h2>
+
+                <div class="highlight-list">
+                    <span>Welcome Ceremony</span>
+                    <span>Talent Show</span>
+                    <span>DJ Night</span>
+                    <span>Gaming Zone</span>
                 </div>
 
-                <div class="gallery">
-                    <img src="../../asset/images/3..jpg"
-                        class="image" alt="Conference">
-                
-                    <div class="overlay">
-                        <div class="text">Conference</div>
-                    </div>
-                </div>
+                <div class="featured-actions">
 
-                <div class="gallery">
-                    <img src="../../asset/images/4..jpg" class="image" alt="Competition">
-                    
-                    <div class="overlay">
-                        <div class="text">Competition</div>
-                    </div>
+                    <button class="button button-primary" id="registerButton">
+                        Register Now <span>→</span>
+                    </button>
+
+                    <button class="button button-outline" id="detailsButton">
+                        View Details
+                    </button>
+
                 </div>
 
             </div>
-           
+
+
+            <div class="featured-image-wrap">
+
+                <img
+                    class="featured-image"
+                    src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1200&q=85"
+                    alt="Students enjoying a welcome event"
+                >
+
+                <span class="welcome-label">Welcome Event</span>
+
+                <span class="registration-label">
+                    Registration Open
+                </span>
+
+            </div>
+
+            <div class="featured-content">
+
+                <h1>Freshers' Welcome 2025</h1>
+
+                <div class="event-meta">
+                    <span>▦ January 8, 2025</span>
+                    <span>⌖ Auditorium</span>
+                    <span>♧ 3,000+ Expected</span>
+                </div>
+
+                <p class="event-description">
+                    Grand welcome ceremony for the new batch of students
+                    with performances, games, and interactive sessions
+                    to help freshers connect with seniors.
+                </p>
+
+                <h2 class="highlights-title">HIGHLIGHTS</h2>
+
+                <div class="highlight-list">
+                    <span>Welcome Ceremony</span>
+                    <span>Talent Show</span>
+                    <span>DJ Night</span>
+                    <span>Gaming Zone</span>
+                </div>
+
+                <div class="featured-actions">
+
+                    <button class="button button-primary" id="registerButton">
+                        Register Now <span>→</span>
+                    </button>
+
+                    <button class="button button-outline" id="detailsButton">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- EVENT GALLERY -->
+        <section class="gallery-section">
+
+            <h2 class="section-title">Event Gallery</h2>
+
+            <div class="gallery-grid">
+
+                <figure class="gallery-item">
+                    <img
+                        src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&fit=crop&w=900&q=85"
+                        alt="Outdoor concert"
+                    >
+                </figure>
+
+                <figure class="gallery-item">
+                    <img
+                        src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=900&q=85"
+                        alt="Sports stadium"
+                    >
+                </figure>
+
+                <figure class="gallery-item">
+                    <img
+                        src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=900&q=85"
+                        alt="Welcome party"
+                    >
+                </figure>
+
+                <figure class="gallery-item">
+                    <img
+                        src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=900&q=85"
+                        alt="University ceremony"
+                    >
+                </figure>
+
+            </div>
+
+        </section>
+
+
+        <!-- UPCOMING EVENTS -->
+        <section class="upcoming-section">
+
+            <div class="upcoming-heading">
+
+                <h2>Upcoming Events</h2>
+
+                <button class="calendar-button" id="calendarButton">
+                    View Full Calendar
+                </button>
+
+            </div>
+
+
+            <div class="upcoming-grid" id="upcomingGrid">
+
+                <!-- EVENT 1 -->
+                <article class="upcoming-card">
+
+                    <div class="date-box">
+                        <span>Jan</span>
+                        <strong>8</strong>
+                    </div>
+
+                    <div class="upcoming-info">
+                        <h3>Freshers' Welcome</h3>
+
+                        <div class="upcoming-meta">
+                            <span class="category social">Social</span>
+                            <span>◷ 6:00 PM</span>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <!-- EVENT 2 -->
+                <article class="upcoming-card">
+
+                    <div class="date-box">
+                        <span>Jan</span>
+                        <strong>15</strong>
+                    </div>
+
+                    <div class="upcoming-info">
+                        <h3>Annual Sports Day</h3>
+
+                        <div class="upcoming-meta">
+                            <span class="category sports">Sports</span>
+                            <span>◷ 9:00 AM</span>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <!-- EVENT 3 -->
+                <article class="upcoming-card">
+
+                    <div class="date-box">
+                        <span>Jan</span>
+                        <strong>20</strong>
+                    </div>
+
+                    <div class="upcoming-info">
+                        <h3>Tech Workshop</h3>
+
+                        <div class="upcoming-meta">
+                            <span class="category academic">Academic</span>
+                            <span>◷ 10:00 AM</span>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <!-- EVENT 4 -->
+                <article class="upcoming-card">
+
+                    <div class="date-box">
+                        <span>Jan</span>
+                        <strong>25</strong>
+                    </div>
+
+                    <div class="upcoming-info">
+                        <h3>Cultural Night</h3>
+
+                        <div class="upcoming-meta">
+                            <span class="category cultural">Cultural</span>
+                            <span>◷ 7:00 PM</span>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <!-- EVENT 5 -->
+                <article class="upcoming-card">
+
+                    <div class="date-box">
+                        <span>Feb</span>
+                        <strong>1</strong>
+                    </div>
+
+                    <div class="upcoming-info">
+                        <h3>Career Fair</h3>
+
+                        <div class="upcoming-meta">
+                            <span class="category placement">Placement</span>
+                            <span>◷ 10:00 AM</span>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <!-- EVENT 6 -->
+                <article class="upcoming-card">
+
+                    <div class="date-box">
+                        <span>Feb</span>
+                        <strong>10</strong>
+                    </div>
+
+                    <div class="upcoming-info">
+                        <h3>Provenance 2025</h3>
+
+                        <div class="upcoming-meta">
+                            <span class="category festival">Festival</span>
+                            <span>◷ All Day</span>
+                        </div>
+                    </div>
+
+                </article>
+
+            </div>
+
+            <p class="calendar-note" id="calendarNote" hidden>
+                You are viewing all currently listed events.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- LIBRARY MANAGEMENT BANNER -->
+    <section class="library-banner">
+
+        <div class="library-banner-inner">
+            <span>▣</span>
+            <strong>LIBRARY MANAGEMENT</strong>
         </div>
+
     </section>
+
+
+    <!-- REGISTRATION / DETAILS MODAL -->
+    <div class="modal" id="eventModal" aria-hidden="true">
+
+        <div class="modal-backdrop" data-close-modal></div>
+
+        <div class="modal-panel" role="dialog" aria-modal="true">
+
+            <button class="modal-close" id="closeModal">
+                ×
+            </button>
+
+            <p class="modal-eyebrow" id="modalEyebrow">
+                UNIWAY EVENTS
+            </p>
+
+            <h2 id="modalTitle">
+                Register for Freshers' Welcome
+            </h2>
+
+            <p id="modalDescription">
+                Join the welcome celebration on January 8, 2025
+                at the Auditorium.
+            </p>
+
+
+            <form id="registrationForm">
+
+                <label for="studentName">Full name</label>
+
+                <input
+                    type="text"
+                    id="studentName"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="studentEmail">Email address</label>
+
+                <input
+                    type="email"
+                    id="studentEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <button class="button button-primary modal-submit" type="submit">
+                    Submit Registration
+                </button>
+
+            </form>
+
+            <p class="form-message" id="formMessage"></p>
+
+        </div>
+
+    </div>
+
 
     <script src="../../src/js/script.js"></script>
+
 </body>
 </html>

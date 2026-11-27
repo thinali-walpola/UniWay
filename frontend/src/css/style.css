@@ -1,3 +1,4 @@
+
 /* =============================
    GOOGLE FONT
 ============================= */
@@ -10,27 +11,34 @@
 ============================= */
 
 :root {
-    --nav-logo-clr: #009900;
-    --nav-link-clr: #5a485c;
-    --dark-purple-clr: #c946b8;
-    --purple-clr: #e016ee;
-    --red-clr: #de1212;
-    --blue-clr:  #0066ff;
-    --blue-light-clr: #4285ff;
-    --light-pink-clr: #f3e7f4;
-    --white-clr: #ffffff;
-    --black-clr: #000000;
-    --black-light-clr: #363737d9;
-    --gray-clr: #f5eded;
-    --gray-light-clr: #555;
-    --dark-gray-clr: #333;
-    --border-clr: #1c1919ba;
-    --text-clr: #b6becf;
-    --light-blue-clr: linear-gradient(120deg, #f0f5ff, #e9fbf8);
-    --active-green-clr-light--:  #10c99a;
-    --dropdown-clr:#3498DB;
-    --active-dropdown-clr: #2980B9;
+    --nav-logo-clr: #6254cf;
+    --nav-link-clr: #493f68;
+    --dark-purple-clr: #4939a8;
+    --purple-clr: #6254cf;
+    --light-purple-clr: #8175ed;
+    --darkest-purple-clr: #252044;
 
+    --red-clr: #de1212;
+    --blue-clr: #6254cf;
+    --blue-light-clr: #8175ed;
+
+    --light-pink-clr: #edeaff;
+
+    --white-clr: #ffffff;
+    --black-clr: #202033;
+    --black-light-clr: #363737d9;
+    --gray-clr: #f5f4ff;
+    --gray-light-clr: #68677d;
+    --dark-gray-clr: #33334a;
+
+    --border-clr: #dedaf3;
+    --text-clr: #85839d;
+
+    --light-blue-clr: linear-gradient(120deg, #f5f6ff, #eeecff);
+
+    --active-green-clr-light--: #6254cf;
+    --dropdown-clr: #6254cf;
+    --active-dropdown-clr: #4939a8;
 }
 
 
@@ -69,7 +77,7 @@ ul {
     width: 100%;
     padding: 20px 80px;
     background: var(--white-clr);
-    border-bottom: 3px solid var(--dark-purple-clr);
+    border-bottom: 3px solid var(--purple-clr);
     z-index: 1000;
 }
 
@@ -136,12 +144,12 @@ ul {
     padding: 120px 20px 40px;
 
     background:
-        linear-gradient(rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)),
+        linear-gradient(rgba(32, 25, 65, 0.65),
+            rgba(32, 25, 65, 0.65)),
         url("../../asset/images/hero.png") no-repeat center center / cover;
 
     text-align: center;
-    color: white;
+    color: var(--white-clr);
 }
 
 .hero-content h1 {
@@ -159,7 +167,7 @@ ul {
     margin-top: 25px;
     padding: 12px 24px;
     background-color: var(--purple-clr);
-    color: white;
+    color: var(--white-clr);
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -207,7 +215,7 @@ ul {
 
 .feature span {
     display: block;
-    color: var(--red-clr);
+    color: var(--purple-clr);
     margin: 0px auto 5px 50px;
     font-size: 14px;
     font-weight: 900;
@@ -224,11 +232,12 @@ ul {
 .line-content h3 {
     font-size: 18px;
     font-weight: 600;
+    color: var(--black-clr);
 }
 
 .line-content i {
     font-size: 20px;
-    color: var(--black-clr);
+    color: var(--purple-clr);
 }
 
 
@@ -244,6 +253,7 @@ ul {
 .right-desc h1 {
     margin: 0 0 15px;
     font-size: 30px;
+    color: var(--black-clr);
 }
 
 .right-desc p {
@@ -280,9 +290,10 @@ ul {
     padding: 11px 12px;
     margin: 0;
     font-size: 14px;
-    border: 1px solid #ddd;
+    border: 1px solid #dedaf3;
     border-radius: 5px 0 0 5px;
     outline: none;
+    background: var(--white-clr);
 }
 
 .search-container input[type="text"]:focus {
@@ -295,7 +306,7 @@ ul {
     margin: 0;
     float: none;
     background: var(--purple-clr);
-    color: white;
+    color: var(--white-clr);
     font-size: 15px;
     border: none;
     border-radius: 0 5px 5px 0;
@@ -338,7 +349,7 @@ ul {
     right: 0;
     min-width: 180px;
     background-color: var(--white-clr);
-    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 18px rgba(45, 35, 100, 0.15);
     border-radius: 5px;
     overflow: hidden;
     z-index: 100;
@@ -415,16 +426,18 @@ ul {
     }
 }
 
+
 /* =============================
    ABOUT
 ============================= */
 
+
 /* =============================
    CONTACT
 ============================= */
+
 .cta-section {
     padding: 50px;
-    /*background: #28062A; */
 }
 
 .cta-container {
@@ -432,9 +445,11 @@ ul {
     padding: 70px;
     min-height: 40vh;
     border-radius: 15px;
-    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-        url("../../asset/images/pc-type.jpg");
-    center/cover no-repeat;
+
+    background:
+        linear-gradient(rgba(32, 25, 65, 0.75), rgba(32, 25, 65, 0.75)),
+        url("../../asset/images/pc-type.jpg") center/cover no-repeat;
+
     color: var(--white-clr);
 }
 
@@ -449,7 +464,6 @@ ul {
     gap: 10px;
     justify-content: center;
     margin-top: 50px;
-
 }
 
 .cta-search-container p {
@@ -460,26 +474,37 @@ ul {
 .cta-search-container input {
     padding: 12px;
     border-radius: 8px;
-    border: 1px solid lightgray;
+    border: 1px solid #dedaf3;
     flex: 1;
     min-width: 200px;
-    background: transparent;
+    background: rgba(255, 255, 255, 0.12);
+    color: var(--white-clr);
+}
+
+.cta-search-container input::placeholder {
+    color: #e0dcff;
 }
 
 .cta-search-container button {
     padding: 12px 20px;
     border-radius: 8px;
     border: none;
-    background: var(--dark-purple-clr);
-    color: white;
+    background: var(--purple-clr);
+    color: var(--white-clr);
     cursor: pointer;
 }
+
+.cta-search-container button:hover {
+    background: var(--dark-purple-clr);
+}
+
 
 /* =============================
    EVENT & NEWS
 ============================= */
 
 /* Featured Events Section */
+
 .featured-events {
     width: 100%;
     padding: 60px 25px;
@@ -489,7 +514,6 @@ ul {
 
 .event-container {
     margin: 50px 70px 50px 70px;
-
 }
 
 .event-container h2 {
@@ -516,10 +540,12 @@ ul {
     padding: 8px 15px;
     border-radius: 5px;
     cursor: pointer;
-    background: var(--light-blue-clr);
+    background: var(--light-pink-clr);
+    color: var(--purple-clr);
 }
 
 /* Three-column grid */
+
 .events-container {
     max-width: 1200px;
     margin: auto;
@@ -529,20 +555,22 @@ ul {
 }
 
 /* Event card */
+
 .event-card {
     background: var(--white-clr);
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 5px 18px rgba(45, 35, 100, 0.07);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .event-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 10px 25px rgba(45, 35, 100, 0.12);
 }
 
 /* Image */
+
 .event-image {
     width: 100%;
     height: 150px;
@@ -563,11 +591,12 @@ ul {
 }
 
 /* Category badge */
+
 .event-category {
     position: absolute;
     top: 12px;
     left: 12px;
-    background: var(--active-green-clr-light--);
+    background: var(--purple-clr);
     color: var(--white-clr);
     font-size: 12px;
     padding: 5px 12px;
@@ -576,30 +605,32 @@ ul {
 }
 
 /* Card details */
+
 .event-details {
     padding: 15px 18px 18px;
 }
 
 .event-date {
-    color: var(--blue-clr);
+    color: var(--purple-clr);
     font-size: 12px;
     margin-bottom: 8px;
 }
 
 .event-details h3 {
-    color: #151b2b;
+    color: var(--black-clr);
     font-size: 16px;
     margin-bottom: 12px;
 }
 
 /* Register button */
+
 .register-btn {
     display: block;
     width: 100%;
     text-align: center;
     text-decoration: none;
-    color: var(--blue-clr);
-    border: 1px solid var(--blue-clr);
+    color: var(--purple-clr);
+    border: 1px solid var(--purple-clr);
     border-radius: 10px;
     padding: 7px 0;
     font-size: 12px;
@@ -608,17 +639,18 @@ ul {
 }
 
 .register-btn:hover {
-    background: var(--blue-light-clr);
+    background: var(--purple-clr);
     color: var(--white-clr);
 }
 
+
 /* Tablet */
+
 @media (max-width: 900px) {
     .events-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
 
 
 /* =============================
@@ -660,7 +692,7 @@ ul {
 
 .footer ul li a:hover,
 .social-icons a:hover {
-    color: var(--white-clr);
+    color: var(--light-purple-clr);
 }
 
 .social-icons {
@@ -740,7 +772,6 @@ ul {
         padding: 45px 30px;
         gap: 25px;
     }
-
 }
 
 
@@ -769,7 +800,7 @@ ul {
 
     .menu-icon {
         display: block;
-        color: #333;
+        color: var(--black-clr);
     }
 
     .nav-links {
@@ -901,6 +932,7 @@ ul {
     }
 
     /* EVENT */
+
     .featured-events {
         padding: 45px 15px;
     }
@@ -934,11 +966,12 @@ ul {
         font-size: 12px;
         padding: 25px 15px;
     }
-
 }
 
 
-/* REDUCED MOTION ACCESSIBILITY */
+/* =============================
+   REDUCED MOTION ACCESSIBILITY
+============================= */
 
 @media (prefers-reduced-motion: reduce) {
     .marquee-track {
