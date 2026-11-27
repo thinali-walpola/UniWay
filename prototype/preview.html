@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+<style>
+/* =================================
+   UNIWAY EXPLORE SECTION
+================================= */
+
+.uniway-explore {
+    position: relative;
+    width: 100%;
+    min-height: 850px;
+    padding: 90px 20px 50px;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 10% 40%,
+            rgba(112, 151, 255, 0.10),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 90% 60%,
+            rgba(161, 111, 255, 0.12),
+            transparent 28%
+        ),
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #f7f8ff,
+            #f1f3ff
+        );
+
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Heading */
+
+.explore-heading {
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.explore-tag {
+    display: inline-block;
+    padding: 9px 18px;
+    border-radius: 30px;
+
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid #e4e5fa;
+
+    color: #6254cf;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    box-shadow: 0 5px 20px rgba(70, 70, 150, 0.08);
+}
+
+.explore-heading h2 {
+    margin: 22px 0 10px;
+
+    font-size: clamp(38px, 6vw, 72px);
+    font-weight: 900;
+    letter-spacing: -2px;
+
+    color: #11152b;
+}
+
+.explore-heading h2 span {
+    background: linear-gradient(
+        90deg,
+        #6654e8,
+        #4094ff
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.explore-heading p {
+    color: #73778d;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* =================================
+   INTERACTIVE STAGE
+================================= */
+
+.explore-stage {
+    position: relative;
+
+    width: 100%;
+    max-width: 1100px;
+    height: 510px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Background glowing circles */
+
+.glow {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(1px);
+    pointer-events: none;
+}
+
+.glow-one {
+    width: 190px;
+    height: 190px;
+
+    left: 5%;
+    top: 15%;
+
+    background: linear-gradient(
+        135deg,
+        rgba(78, 126, 255, 0.18),
+        rgba(139, 93, 255, 0.05)
+    );
+}
+
+.glow-two {
+    width: 220px;
+    height: 220px;
+
+    right: 5%;
+    bottom: 10%;
+
+    background: linear-gradient(
+        135deg,
+        rgba(145, 99, 255, 0.17),
+        rgba(70, 143, 255, 0.05)
+    );
+}
+
+.glow-three {
+    width: 100px;
+    height: 100px;
+
+    right: 23%;
+    top: 5%;
+
+    background: rgba(91, 157, 255, 0.10);
+}
+
+/* =================================
+   CENTRAL RECTANGLE
+================================= */
+
+.explore-center {
+    position: relative;
+    z-index: 10;
+
+    width: 280px;
+    min-height: 220px;
+
+    padding: 30px 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 24px;
+
+    background: linear-gradient(
+        145deg,
+        rgba(255, 255, 255, 0.97),
+        rgba(239, 240, 255, 0.95)
+    );
+
+    box-shadow:
+        0 20px 60px rgba(77, 84, 180, 0.15),
+        inset 0 1px 5px white;
+
+    cursor: pointer;
+    font-family: inherit;
+    text-align: center;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.explore-center:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 25px 70px rgba(92, 77, 210, 0.24);
+}
+
+.center-symbol {
+    width: 55px;
+    height: 55px;
+
+    margin: 0 auto 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 17px;
+
+    background: linear-gradient(
+        135deg,
+        #6b59ed,
+        #419bff
+    );
+
+    color: white;
+    font-size: 29px;
+
+    box-shadow: 0 8px 25px rgba(103, 91, 238, 0.3);
+}
+
+.explore-center h3 {
+    margin: 0 0 8px;
+    font-size: 22px;
+    color: #171a35;
+}
+
+.explore-center p {
+    margin: 0 0 20px;
+    font-size: 12px;
+    color: #85879b;
+}
+
+.center-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 17px;
+    border-radius: 30px;
+
+    background: #eeeaff;
+    color: #6654d9;
+
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.arrow {
+    font-size: 16px;
+}
+
+/* =================================
+   FEATURE CARDS
+================================= */
+
+.feature-card {
+    position: absolute;
+    z-index: 4;
+
+    width: 225px;
+    min-height: 135px;
+
+    padding: 18px;
+
+    text-decoration: none;
+    color: #20233e;
+
+    background: rgba(255, 255, 255, 0.88);
+
+    border: 1px solid rgba(255, 255, 255, 0.95);
+    border-radius: 17px;
+
+    box-shadow: 0 12px 35px rgba(63, 76, 155, 0.10);
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: scale(0.5) translateY(30px);
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.45s ease,
+        transform 0.55s cubic-bezier(.2,.8,.2,1),
+        visibility 0.45s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px) scale(1.04) !important;
+
+    box-shadow: 0 18px 40px rgba(84, 74, 194, 0.20);
+
+    border-color: #c9c4ff;
+}
+
+.feature-icon {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 11px;
+
+    background: #f0eeff;
+
+    font-size: 21px;
+}
+
+.feature-card h3 {
+    font-size: 14px;
+    margin: 10px 0 5px;
+    font-weight: 700;
+}
+
+.feature-card p {
+    font-size: 11px;
+    line-height: 1.5;
+    margin: 0;
+    color: #85879b;
+}
+
+/* Feature card positions */
+
+.card-one {
+    top: 5%;
+    left: 7%;
+}
+
+.card-two {
+    top: 2%;
+    left: 50%;
+    margin-left: -112px;
+}
+
+.card-three {
+    top: 5%;
+    right: 7%;
+}
+
+.card-four {
+    bottom: 5%;
+    left: 7%;
+}
+
+.card-five {
+    bottom: 2%;
+    left: 50%;
+    margin-left: -112px;
+}
+
+.card-six {
+    bottom: 5%;
+    right: 7%;
+}
+
+/* =================================
+   OPEN ANIMATION
+================================= */
+
+.explore-stage.active .feature-card {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1) translateY(0);
+    pointer-events: auto;
+}
+
+.explore-stage.active .card-one {
+    transition-delay: 0.05s;
+}
+
+.explore-stage.active .card-two {
+    transition-delay: 0.12s;
+}
+
+.explore-stage.active .card-three {
+    transition-delay: 0.19s;
+}
+
+.explore-stage.active .card-four {
+    transition-delay: 0.26s;
+}
+
+.explore-stage.active .card-five {
+    transition-delay: 0.33s;
+}
+
+.explore-stage.active .card-six {
+    transition-delay: 0.40s;
+}
+
+.explore-stage.active .explore-center {
+    transform: scale(0.92);
+}
+
+/* Footer */
+
+.explore-footer {
+    text-align: center;
+    margin-top: 10px;
+
+    color: #777b96;
+    font-size: 13px;
+}
+
+.explore-footer span {
+    color: #7764e8;
+}
+
+/* =================================
+   MOBILE RESPONSIVENESS
+================================= */
+
+@media (max-width: 768px) {
+
+    .uniway-explore {
+        padding: 65px 15px 40px;
+        min-height: auto;
+    }
+
+    .explore-heading h2 {
+        font-size: 42px;
+    }
+
+    .explore-heading p {
+        font-size: 13px;
+    }
+
+    .explore-stage {
+        height: auto;
+        min-height: 280px;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+    .explore-center {
+        width: min(280px, 100%);
+        min-height: 210px;
+        flex-shrink: 0;
+    }
+
+    .feature-card {
+        position: relative;
+
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+
+        margin: 0;
+
+        width: 100%;
+        max-width: 340px;
+        min-height: 110px;
+
+        display: block;
+
+        transform: translateY(20px) scale(0.95);
+    }
+
+    .explore-stage.active .feature-card {
+        transform: translateY(0) scale(1);
+    }
+
+    .explore-stage.active .explore-center {
+        transform: scale(1);
+    }
+
+    .glow {
+        opacity: 0.5;
+    }
+
+    .explore-footer {
+        font-size: 11px;
+        padding-top: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .explore-center {
+        order: -1;
+    }
+
+    .feature-card {
+        order: 1;
+    }
+}
+</style>
+<body>
+<section class="uniway-explore" id="explore">
+
+    <div class="explore-heading">
+        <span class="explore-tag">✦ DISCOVER YOUR UNIVERSITY WORLD</span>
+
+        <h2>
+            EXPLORE <span>UNIWAY</span>
+        </h2>
+
+        <p>
+            Everything you need around your university,
+            all in one place.
+        </p>
+    </div>
+
+    <div class="explore-stage" id="exploreStage">
+
+        <!-- Background decorations -->
+        <div class="glow glow-one"></div>
+        <div class="glow glow-two"></div>
+        <div class="glow glow-three"></div>
+
+        <!-- Feature cards -->
+
+        <a href="boarding.html" class="feature-card card-one">
+            <div class="feature-icon">🏠</div>
+            <h3>Boarding & Accommodation</h3>
+            <p>Find student rooms and affordable places to stay.</p>
+        </a>
+
+        <a href="food.html" class="feature-card card-two">
+            <div class="feature-icon">🍔</div>
+            <h3>Food & Restaurants</h3>
+            <p>Discover affordable meals and restaurants.</p>
+        </a>
+
+        <a href="transport.html" class="feature-card card-three">
+            <div class="feature-icon">🚌</div>
+            <h3>Transport & Routes</h3>
+            <p>Explore buses, routes and travel options.</p>
+        </a>
+
+        <a href="shops.html" class="feature-card card-four">
+            <div class="feature-icon">🛍️</div>
+            <h3>Shops & Essentials</h3>
+            <p>Find shops and everyday necessities.</p>
+        </a>
+
+        <a href="maps.html" class="feature-card card-five">
+            <div class="feature-icon">📍</div>
+            <h3>Maps & Navigation</h3>
+            <p>Locate important places around campus.</p>
+        </a>
+
+        <a href="university-life.html" class="feature-card card-six">
+            <div class="feature-icon">🎓</div>
+            <h3>University Life</h3>
+            <p>Discover facilities and student services.</p>
+        </a>
+
+        <!-- Central clickable rectangle -->
+
+        <button class="explore-center" id="exploreToggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="exploreStage">
+
+            <div class="center-symbol">✦</div>
+
+            <h3>Discover UniWay</h3>
+
+            <p>Explore your university world</p>
+
+            <span class="center-action">
+                CLICK TO EXPLORE
+                <span class="arrow">↗</span>
+            </span>
+
+        </button>
+
+    </div>
+
+    <div class="explore-footer">
+        <span>✦</span>
+        Discover more. Explore more. Experience more.
+    </div>
+
+</section>
+<script>
+// =================================
+// UNIWAY EXPLORE INTERACTION
+// =================================
+
+const exploreToggle = document.getElementById("exploreToggle");
+
+const exploreStage = document.getElementById("exploreStage");
+
+// Click central rectangle to show/hide feature cards
+
+exploreToggle.addEventListener("click", function () {
+
+    // Toggle active class
+    exploreStage.classList.toggle("active");
+
+    // Check whether section is open
+    const isOpen = exploreStage.classList.contains("active");
+
+    // Update accessibility state
+    exploreToggle.setAttribute("aria-expanded", isOpen);
+
+    // Update button text
+    if (isOpen) {
+
+        exploreToggle.querySelector("h3").textContent =
+            "Explore UniWay";
+
+        exploreToggle.querySelector(".center-action").innerHTML =
+            'CLICK TO CLOSE <span class="arrow">↙</span>';
+
+    } else {
+
+        exploreToggle.querySelector("h3").textContent =
+            "Discover UniWay";
+
+        exploreToggle.querySelector(".center-action").innerHTML =
+            'CLICK TO EXPLORE <span class="arrow">↗</span>';
+
+    }
+
+});    
+</script>
+</body>
+</html>
