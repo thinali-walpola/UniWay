@@ -15,8 +15,8 @@
     --dark-purple-clr: #c946b8;
     --purple-clr: #e016ee;
     --red-clr: #de1212;
-    --blue-clr: #3498DB;
-    --light-blue-clr: #2980B9;
+    --blue-clr:  #0066ff;
+    --blue-light-clr: #4285ff;
     --light-pink-clr: #f3e7f4;
     --white-clr: #ffffff;
     --black-clr: #000000;
@@ -26,6 +26,10 @@
     --dark-gray-clr: #333;
     --border-clr: #1c1919ba;
     --text-clr: #b6becf;
+    --light-blue-clr: linear-gradient(120deg, #f0f5ff, #e9fbf8);
+    --active-green-clr-light--:  #10c99a;
+    --dropdown-clr:#3498DB;
+    --active-dropdown-clr: #2980B9;
 
 }
 
@@ -43,6 +47,7 @@
 
 body {
     overflow-x: hidden;
+    background: var(--light-blue-clr);
 }
 
 ul {
@@ -63,7 +68,7 @@ ul {
     left: 0;
     width: 100%;
     padding: 20px 80px;
-    background: white;
+    background: var(--white-clr);
     border-bottom: 3px solid var(--dark-purple-clr);
     z-index: 1000;
 }
@@ -312,7 +317,7 @@ ul {
     align-items: center;
     gap: 8px;
     padding: 11px 12px;
-    background-color: var(--blue-clr);
+    background-color: var(--dropdown-clr);
     color: var(--white-clr);
     font-size: 13px;
     border: none;
@@ -323,7 +328,7 @@ ul {
 
 .dropbtn:hover,
 .dropbtn:focus {
-    background-color: var(--light-blue-clr);
+    background-color: var(--active-dropdown-clr);
 }
 
 .dropdown-content {
@@ -430,6 +435,7 @@ ul {
     background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
         url("../../asset/images/pc-type.jpg");
     center/cover no-repeat;
+    color: var(--white-clr);
 }
 
 .container {
@@ -473,9 +479,12 @@ ul {
    EVENT & NEWS
 ============================= */
 
-.event-section {
-    min-height: 70vh;
-    padding: 20px 0;
+/* Featured Events Section */
+.featured-events {
+    width: 100%;
+    padding: 60px 25px;
+    background: var(--light-blue-clr);
+    box-sizing: border-box;
 }
 
 .event-container {
@@ -507,119 +516,110 @@ ul {
     padding: 8px 15px;
     border-radius: 5px;
     cursor: pointer;
+    background: var(--light-blue-clr);
+}
+
+/* Three-column grid */
+.events-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* Event card */
+.event-card {
     background: var(--white-clr);
-}
-
-
-/* GALLERY SECTION */
-
-.gallery-section {
-    padding: 100px 8%;
-    background: #28062A;
-}
-
-.gallery-header {
-    text-align: center;
-    margin-bottom: 60px;
-    color: white;
-}
-
-
-
-/* GRID */
-
-.grid {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr;
-    gap: 30px;
-}
-
-/* COMMON CARD */
-
-.card {
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 22px;
-    background: rgba(255, 255, 255, 0.02);
+    border-radius: 20px;
     overflow: hidden;
-    transition: .3s ease;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
+.event-card:hover {
     transform: translateY(-6px);
-    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
-/* LARGE CARD */
-
-.card-large {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    min-height: 420px;
+/* Image */
+.event-image {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
 }
 
-.card-large .gallery-content {
-    color: white;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.card-large img {
+.event-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-
-.card-small:not(.full-image1) {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-}
-
-.card-small:not(.full-image1)>div {
-    padding: 30px;
-}
-
-.card-small:not(.full-image1) img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
     display: block;
-    margin-top: auto;
-    border-radius: 0;
-
-
-    /* FULL IMAGE CARD */
-
-    /* Bottom card spans the entire row */
-    .full-image1 {
-        grid-column: 1 / -1;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-    }
-
-    /* Bottom image fills the entire card width */
-    .full-image1 img {
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
-        display: block;
-        margin: 0;
-        border-radius: 0;
-    }
-
-    /* Bottom card text */
-    .full-image1 .gallery-content {
-        padding: 30px;
-        color: white;
-    }
-
+    transition: transform 0.4s ease;
 }
+
+.event-card:hover .event-image img {
+    transform: scale(1.06);
+}
+
+/* Category badge */
+.event-category {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: var(--active-green-clr-light--);
+    color: var(--white-clr);
+    font-size: 12px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+/* Card details */
+.event-details {
+    padding: 15px 18px 18px;
+}
+
+.event-date {
+    color: var(--blue-clr);
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.event-details h3 {
+    color: #151b2b;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+/* Register button */
+.register-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: var(--blue-clr);
+    border: 1px solid var(--blue-clr);
+    border-radius: 10px;
+    padding: 7px 0;
+    font-size: 12px;
+    transition: 0.3s ease;
+    box-sizing: border-box;
+}
+
+.register-btn:hover {
+    background: var(--blue-light-clr);
+    color: var(--white-clr);
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .events-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
 
 /* =============================
    FOOTER
@@ -901,17 +901,16 @@ ul {
     }
 
     /* EVENT */
-    .gallery-section {
-        padding: 60px 20px;
+    .featured-events {
+        padding: 45px 15px;
     }
 
-    .gallery-header h1 {
-        font-size: 30px;
+    .events-container {
+        grid-template-columns: 1fr;
     }
 
-    .card-large .gallery-content,
-    .full-image1 .gallery-content {
-        padding: 25px;
+    .section-header h2 {
+        font-size: 24px;
     }
 
     /* FOOTER */
